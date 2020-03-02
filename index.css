@@ -1,0 +1,94 @@
+body {
+    font: 10px "Century Gothic", Futura, sans-serif;
+    margin: 40px;
+    background: #423d3d;
+}
+
+ol, ul {
+    padding-left: 30px;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    color: #222121;
+    margin-bottom: 10px;
+}
+
+.square {
+    color: #0eebffc7;
+    background: #ffffff;
+    border: 1.5px solid #4a5049;
+    float: left;
+    font-size: 96px;
+    font-weight: bold;
+    line-height: 136px;
+    height: 136px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 136px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-info {
+    font-size: 48px;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.restart-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.restart:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.restart:focus {
+    outline: none;
+}
+
+.restart:active {
+    box-shadow: 0 1px #bbff00;
+    transform: translateY(1px);
+}
+
+.restart {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #0eebffb9;
+    color: #2e2d26;
+    border: none;
+    font-size: 24px;
+    line-height: 48px;
+    height: 48px;
+    width: 40%;
+    text-align: center;
+    border-radius: 4px;
+}
